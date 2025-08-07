@@ -1,3 +1,13 @@
+<!--
+from pathlib import Path
+from zipfile import ZipFile
+
+# Create directory and file paths
+site_dir = Path("/mnt/data/ali_baba_site")
+site_dir.mkdir(exist_ok=True)
+index_file = site_dir / "index.html"
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,7 +135,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#reservation">Reservation</a></li>
+        <!-- <li><a href="#reservation">Reservation</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -142,22 +152,125 @@
   <section id="menu">
     <h2>Our Menu</h2>
     <ul class="menu-items">
-      <li>Pizza</li>
-      <li>Burgers</li>
-      <li>Chicken Strippers</li>
-      <li>Chicken Wings</li>
-      <li>Beef Burger</li>
-      <li>Chicken Burger</li>
-      <li>Fries</li>
-      <li>Cold Drinks</li>
+      <li><a href="http://www.alibabaaberdare.com/">Pizza</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Burgers</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Chicken Strippers</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Chicken Wings</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Beef Burger</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Chicken Burger</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Fries</a></li>
+      <li><a href="http://www.alibabaaberdare.com/">Cold Drinks</a></li>
     </ul>
+    <h2>Desi Menu (UK Style) Coming Soon</h2>
+    <p><b>🍽️ STARTERS - Street Food & Chaats</b><br>
+Pani Puri / Gol Gappa (🥦🌱) – £5.50
+Crispy semolina shells filled with spicy tamarind water, chickpeas, and potatoes.
+<br>Papdi Chaat (🥦🌱) – £5.95
+Crispy wafers topped with yogurt, tamarind chutney, and chaat masala.
+<br>Samosa Chaat (🥦🌱) – £6.50
+Crushed samosas topped with chickpeas, yogurt, and spicy chutneys.
+<br>Aloo Tikki Chaat (🥦🌱) – £6.00
+Spiced potato patties topped with curried chickpeas and chutneys.
+</p>
+<p><b>🍽️ STARTERS - Grilled & Fried Favourites</b><br>
+Chicken Malai Tikka (🐓) – £7.95
+Creamy, mild grilled chicken marinated in yoghurt and spices.
+<br>Lamb Seekh Kebab (🐄) – £8.50
+Minced lamb skewers grilled to perfection.
+<br>Paneer Tikka (🥦) – £7.25
+Cottage cheese cubes grilled with bell peppers and spices.
+<br>Fish Amritsari (🐟) – £8.50
+Crispy battered white fish marinated with carom seeds and spices.
+<br>Chilli Chicken (Indo-Chinese) (🐓🌶️) – £8.25
+Crispy chicken tossed in soy, garlic, and Indo-Chinese sauces.
+</p>
+<p><b>🍛 MAINS - Curries (Meat & Seafood)</b><br>
+Butter Chicken (🐓) – £11.95
+Creamy tomato-based curry with tandoori chicken pieces.
+<br>Karahi Chicken / Lamb (🐓/🐄🌶️) – £11.50 / 12.50
+Cooked in wok-style with onions, capsicum, and crushed spices.
+<br>Lamb Rogan Josh (🐄) – £12.95
+Kashmiri-style curry with yogurt and red chillies.
+<br>Prawn Masala (🐟🌶️) – £13.50
+Juicy prawns cooked in spiced tomato and onion gravy.
+<br>Nihari (Slow Cooked Beef Stew) (🐄) – £13.95
+Traditional Pakistani-style beef stew, slow cooked overnight.
+</p>
+<p><b>🍛 MAINS - Vegetarian & Vegan Delights</b><br>
+Palak Paneer (🥦) – £9.95
+Spinach and paneer curry with ginger, garlic, and spices.
+<br>Chana Masala (🥦🌱) – £8.95
+Tangy chickpea curry with tomatoes, onions and masalas.
+<br>Baingan Bharta (Smoked Aubergine) (🥦🌱) – £9.25
+Roasted aubergine mash with mustard seeds and garlic.
+<br>Tarka Daal / Daal Makhani (🥦🌱) – £8.50 / 9.25
+Yellow lentils tempered with garlic, or creamy black lentils.
+<br>Mixed Veg Curry (🥦🌱) – £8.95
+Seasonal vegetables in traditional masala gravy.
+</p>
+<p><b>🍚 RICE & BIRYANI</b><br>
+Hyderabadi Chicken Biryani (🐓🌶️) – £11.95
+Dum-cooked basmati rice with chicken, mint, and saffron.
+<br>Lamb Biryani (🐄) – £12.95
+Aromatic rice layered with spiced lamb and fried onions.
+<br>Veg Biryani (🥦🌱) – £10.50
+Fragrant biryani with seasonal vegetables and nuts.
+<br>Jeera Rice / Plain Rice (🥦🌱) – £3.50 / 2.95
+Basmati rice tempered with cumin / plain steamed rice.
+<br>Pilau Rice (🥦🌱) – £3.95
+Flavoured rice with whole spices and saffron.
+</p>
+<p><b>🍞 BREADS</b><br>
+Garlic Naan / Butter Naan (🌾🥦) – £2.95 / 2.75
+<br>Tandoori Roti (🌾🥦🌱) – £2.25
+<br>Stuffed Naan (Keema / Paneer / Aloo)  – £3.75
+<br>Lachha Paratha  – £2.95
+<br>Gluten-Free Roti (upon request)  – £2.75
+</p>
+<p><b>🥗 SIDES & SALADS</b><br>
+Raita (Boondi / Cucumber / Mixed)  – £2.95
+<br>Green Salad with Lemon & Chaat Masala  – £3.50
+<br>Pickle & Chutney Tray  – £2.50
+</p>
+<p><b>🧁 DESSERTS</b><br>
+Gulab Jamun (2 pcs)  – £4.25
+<br>Ras Malai  – £4.95
+<br>Kheer (Rice Pudding)  – £4.25
+<br>Gajar Halwa  – £4.75
+<br>Kulfi (Mango / Pistachio / Malai)  – £3.95
+</p>
+<p><b>🧋 DRINKS – Traditional Desi Beverages</b><br>
+Mango Lassi / Sweet Lassi / Salty Lassi  – £3.50
+<br>Masala Chai  – £2.50
+<br>Karak Chai  – £2.95
+<br>Rooh Afza Lemonade  – £2.75
+<br>Thums Up / Limca / Maaza  – £2.95
+</p>
+<p><b>🧋 DRINKS – Modern Refreshers</b><br>
+Iced Chai Latte  – £3.95
+<br>Mint Mojito (Non-Alcoholic)  – £4.25
+<br>Mango Mojito (Non-Alcoholic)  – £4.50
+<br>Sparkling Water / Still Water  – £1.95
+<br>Coke / Diet Coke / Sprite  – £1.95
+</p>
+<p><b>🔥 CHEF SPECIAL KARAHI DISHES</b><br>
+Chicken Karahi (Boneless) (🐓🌶️) – £11.95
+Classic boneless chicken cooked in a thick tomato-based gravy with fresh ginger, green chillies, and coriander.
+<br>Lamb Karahi (🐄🌶️) – £13.50
+Tender lamb pieces simmered in a traditional wok with tomatoes, garlic, green chillies, and whole spices.
+<br>Beef Karahi (🐄🌶️) – £13.95
+Slow-cooked beef chunks in a rich, spiced karahi masala with capsicum and tomatoes.
+</p>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Ali Baba is a fast food restaurant based in Aberdare, Wales. We're passionate about serving fresh, hot meals quickly – and we’re excited to bring Pakistani and Indian flavors to you soon!</p>
+    <p>Ali Baba is a fast food restaurant based in Aberdare, Wales. We're passionate about serving fresh, hot meals quickly – and we’re excited to bring Pakistani and Indian flavors to you soon!
+      
+    </p>
   </section>
 
+<!--
   <section id="reservation">
     <h2>Make a Reservation</h2>
     <form action="https://formspree.io/f/xqkgeoyq" method="POST">
@@ -170,11 +283,14 @@
       <button type="submit">Book Table</button>
     </form>
   </section>
+-->
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: xyz@gmail.com</p>
-    <p>Location: Aberdare, Wales</p>
+    <p>Phone no. 07742519103</p>
+    <p>Email: shampishop25@gmail.com</p>
+    <p>Location: Unit 3, Llwydcoed road, Aberdare
+Post code: CF44 0TN</p>
     <iframe
       src="https://www.google.com/maps?q=Aberdare,+Wales&output=embed"
       width="100%"
@@ -191,3 +307,14 @@
   </footer>
 </body>
 </html>
+
+<!--
+index_file.write_text(html_content)
+
+# Create zip file
+zip_path = "/mnt/data/ali_baba_website.zip"
+with ZipFile(zip_path, 'w') as zipf:
+    zipf.write(index_file, arcname="index.html")
+
+zip_path
+-->
